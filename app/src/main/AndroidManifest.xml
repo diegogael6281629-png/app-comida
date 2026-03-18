@@ -12,13 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practica6">
         <activity
-            android:name=".SeatSelection"
+            android:name=".tipo_orden"
+            android:exported="false" />
+
+        <activity
+            android:name=".menu"
             android:exported="false" />
         <activity
-            android:name=".Catalogo"
-            android:exported="false" />
-        <activity
-            android:name=".detalle_pelicula"
+            android:name=".detalle_logica"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/red"
+    tools:context=".detalle_logica">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_platillo_imagen"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hamburguesa"/>
+
+        <TextView
+            android:id="@+id/tv_nombre_platillo"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="25dp"
+            android:text="Hamburguesa Clásica"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_platillo_desc"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingHorizontal="25dp"
+            android:text="Hamburguesa con carne de res, queso, lechuga, tomate y aderezo especial."
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$120 MXN"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnMenos"
+            android:layout_width="57dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvCantidad"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnMas"
+            android:layout_width="57dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botonP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:paddingHorizontal="@dimen/paddingButton"
+        android:text="Ordenar"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
+

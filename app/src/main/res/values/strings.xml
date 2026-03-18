@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Practica6</string>
-    <string name="welcome">Welcome to popcorn factory, home of the best series and movies. Just lay down, make some popcorn and enjoy! </string>
-    <string name="getMeIn">Get Me In</string>
+    <string name="welcome">Burgers Valencia, ubicado en Ciudad Obregón, es un restaurante especializado en cocina americana. Entre los platillos más destacados se encuentran hamburguesas, hot dogs y Tenders. Además, ofrecen una variedad de milkshakes, y bebibas frias. </string>
+    <string name="getMeIn">Adelante</string>
 
-    <string name="movies">Movies</string>
+    <string name="movies">Pedidos</string>
 </resources>

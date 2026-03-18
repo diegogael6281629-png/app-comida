@@ -5,4 +5,9 @@
     <color name="yellow">#FFD501</color>
     <color name="gray">#1D1D1D</color>
     <color name="mainText">#C5C5C5</color>
+    <color name="red">#5f0404</color>
+
+    <color name="crema">#EDEEE6</color>
+    <color name="crema1">#EFE1C7</color>
+    <color name="cremafuerte">#F7BD99</color>
 </resources>

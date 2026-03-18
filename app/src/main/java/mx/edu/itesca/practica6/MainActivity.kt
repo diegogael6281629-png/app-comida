@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val button: Button = findViewById(R.id.boton)
-        button.setOnClickListener() { var intent: Intent = Intent(this, Catalogo::class.java)
+        button.setOnClickListener() { var intent: Intent = Intent(this, menu::class.java)
         startActivity(intent)
 
         }
