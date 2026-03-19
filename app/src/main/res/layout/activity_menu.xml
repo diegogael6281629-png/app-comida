@@ -62,5 +62,31 @@
             android:padding="10dp"
             android:stretchMode="columnWidth"/>
 
+        <!-- POSTRES Y EXTRAS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Postres y Extras "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:layout_marginHorizontal="15dp"/>
+
+        <GridView
+            android:id="@+id/postres_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:padding="10dp"
+            android:stretchMode="columnWidth"/>
+
     </LinearLayout>
 </ScrollView>

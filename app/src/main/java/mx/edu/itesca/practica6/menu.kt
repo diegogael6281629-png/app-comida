@@ -17,6 +17,9 @@ class menu : AppCompatActivity() {
     var BebidasAdapter: ProductoApadter? = null
     var Comidas = ArrayList<Producto>()
     var Bebidas = ArrayList<Producto>()
+    var PostresAdapter: ProductoApadter? = null
+    var Postres = ArrayList<Producto>()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,14 +27,20 @@ class menu : AppCompatActivity() {
 
         cargarComidas()
         cargarBebidas()
+        cargarPostres()
 
         Comidaadapter = ProductoApadter(context = this, Comidas)
         BebidasAdapter = ProductoApadter(context = this, Bebidas)
+        PostresAdapter = ProductoApadter(this, Postres)
         val gridComidas: GridView = findViewById(R.id.comidas_menu)
         val gridBebidas: GridView = findViewById(R.id.bebidas_menu)
+        val gridPostres: GridView = findViewById(R.id.postres_menu)
+
 
         gridComidas.adapter = Comidaadapter
         gridBebidas.adapter = BebidasAdapter
+        gridPostres.adapter = PostresAdapter
+
     }
     fun cargarComidas() {
 
@@ -266,7 +275,37 @@ class menu : AppCompatActivity() {
         )
     }
 
+    fun cargarPostres() {
+
+        Postres.add(
+            Producto("chessecake de Chocolate", R.drawable.chesscake, R.drawable.chesscake,
+                90.00, "Rebanada de chessecake con chocolate.", 0)
+        )
+
+        Postres.add(
+            Producto("Rol De Canela", R.drawable.rolcanela, R.drawable.rolcanela,
+                60.00, "Rol de canela de pan briosche.", 0)
+        )
+
+        Postres.add(
+            Producto("aderezo ranch", R.drawable.ranch, R.drawable.ranch,
+                85.00, "cremoso ranch.", 0)
+        )
+
+        Postres.add(
+            Producto("Extra Queso", R.drawable.queso, R.drawable.queso,
+                20.00, "Agrega queso a tu comida.", 0)
+        )
+
+        Postres.add(
+            Producto("Extra Tocino", R.drawable.tocino, R.drawable.tocino,
+                25.00, "Agrega tocino.", 0)
+        )
+    }
 }
+
+
+
 class ProductoApadter : BaseAdapter {
     var lista = ArrayList<Producto>()
     var context: Context? = null
