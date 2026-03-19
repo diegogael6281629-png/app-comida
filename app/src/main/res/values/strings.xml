@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Practica6</string>
+    <string name="app_name">app-comida</string>
     <string name="welcome">Burgers Valencia, ubicado en Ciudad Obregón, es un restaurante especializado en cocina americana. Entre los platillos más destacados se encuentran hamburguesas, hot dogs y Tenders. Además, ofrecen una variedad de milkshakes, y bebibas frias. </string>
     <string name="getMeIn">Adelante</string>
 
