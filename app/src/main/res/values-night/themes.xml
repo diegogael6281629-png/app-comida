@@ -2,7 +2,34 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Practica6" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        <!-- Color principal: crema suave -->
+        <item name="colorPrimary">#F5ECD7</item>
+        <!-- Variante más oscura del color principal -->
+        <item name="colorPrimaryVariant">#E8D5B7</item>
+        <!-- Texto/íconos sobre colorPrimary -->
+        <item name="colorOnPrimary">#1C1C1C</item>
+
+        <!-- Color secundario: blanco hueso -->
+        <item name="colorSecondary">#FFFDF5</item>
+        <item name="colorOnSecondary">#1C1C1C</item>
+
+        <!-- Fondo de la app (oscuro, para contraste) -->
+        <item name="android:colorBackground">#121212</item>
+        <item name="colorOnBackground">#F5ECD7</item>
+
+        <!-- Superficie de tarjetas/diálogos -->
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="colorOnSurface">#FFFDF5</item>
+
+        <!-- Textos principales en color crema/blanco -->
+        <item name="android:textColorPrimary">#FFFDF5</item>
+        <item name="android:textColorSecondary">#D4C5A9</item>
+        <item name="android:textColorHint">#A89880</item>
+
+        <!-- Color de error -->
+        <item name="colorError">#CF6679</item>
+        <item name="colorOnError">#1C1C1C</item>
 
     </style>
 </resources>
